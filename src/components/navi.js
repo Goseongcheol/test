@@ -1,15 +1,23 @@
-const  Navi=()=> {
-    return (
-      
-      <ul class="nav justify-content-center">
-          <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/map">Home</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="/map/map">map</a>
-          </li>
-      </ul>
-    );
-  }
-  
-  export default Navi;
+const Navi = () => {
+  return (
+    <ul className="nav justify-content-center">
+      <li className="nav-item">
+        <a className="nav-link active" aria-current="page" href="/map">
+          Home
+        </a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="/map/map">
+          map
+        </a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="/login">
+          logout
+        </a>
+      </li>
+    </ul>
+  );
+};
+
+export default Navi;

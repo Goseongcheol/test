@@ -1,15 +1,19 @@
-import { useState } from "react";
 import { ActionTypes } from "./../action/actionTypes";
 
-const initialcount = {
+const initialCount = {
   count: 0,
 };
-const countReducer = (state = initialcount, action) => {
-  console.log(action);
+const countReducer = (state = initialCount, action) => {
   switch (action.type) {
-    case ActionTypes.increaseNumber:
+    case "INCREASE_NUMBER":
       return {
-        payload: state.count + 1,
+        ...state,
+        count: action.payload,
+      };
+    case "DECREASE_NUMBER":
+      return {
+        ...state,
+        count: action.payload,
       };
     default:
       return state;
