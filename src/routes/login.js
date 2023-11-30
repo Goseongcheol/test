@@ -1,8 +1,7 @@
 import axios from "axios";
 import { loginSuccessAction } from "./../redux/action";
-import { useSelector } from "react-redux";
 
-export async function goLogin(id, password) {
+export async function goLogin(id, password, dispatch) {
   try {
     console.log(`아이디:${id}, password:${password}`);
     await axios
@@ -12,10 +11,8 @@ export async function goLogin(id, password) {
       })
       .then(async (res) => {
         if (res.data.res !== null) {
-          loginSuccessAction(res.data.res);
-
+          dispatch(loginSuccessAction(res.data.res)); // action dispatch
           console.log(res);
-          alert();
         } else {
           console.log("로그인실패");
         }

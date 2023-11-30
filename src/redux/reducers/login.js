@@ -2,8 +2,6 @@ import { ActionTypes } from "./../action/actionTypes";
 
 const initialState = {
   userInfo: null,
-  isLoading: false,
-  error: null,
 };
 
 const loginReducer = (state = initialState, action) => {
@@ -11,13 +9,13 @@ const loginReducer = (state = initialState, action) => {
     case "LOGIN_SUCCESS":
       return {
         ...state,
-        payload: action.payload,
+        userInfo: action.payload,
       };
 
     case "LOGIN_FAIL":
       return {
         ...state,
-        payload: action.payload,
+        userInfo: action.payload,
       };
     default:
       return state;

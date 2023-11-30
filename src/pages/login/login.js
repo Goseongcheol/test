@@ -2,15 +2,22 @@ import React, { useEffect, useState } from "react";
 import login from "./../../routes/login";
 import { useDispatch, useSelector } from "react-redux";
 import { goLogin } from "../../routes/login";
+import { useNavigate } from "react-router-dom";
 
 const App = () => {
   const dispatch = useDispatch();
   const [id, setId] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
-  // useEffect(() => {
-  //   console.log(id);
-  // }, [id]);
+  // const user = useSelector((state) => state.login.userInfo.name);
+  const user = useSelector(
+    (state) => state.login.userInfo && state.login.userInfo.name,
+  );
+
+  useEffect(() => {
+    console.log(user);
+  }, [user]);
 
   const login = () => {
     if (!id) {
@@ -18,7 +25,10 @@ const App = () => {
     } else if (!password) {
       alert("비밀번호를 입력해주세요");
     } else {
-      goLogin(id, password);
+      goLogin(id, password, dispatch);
+      console.log(user);
+      alert(`${user}님 환영합니다`);
+      navigate("/map", { replace: true });
     }
   };
 
