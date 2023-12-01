@@ -1,10 +1,13 @@
 import Kakao from "./../../components/Map";
 import Navi from "./../../components/navi";
+import { useSelector } from "react-redux";
 
 const App = () => {
+  const user = useSelector((state) => state.login.userInfo);
+
   return (
     <div className="container" style={{ height: "100vh" }}>
-      <Navi />
+      <Navi userInfo={user} />
       <div
         className=" border mt-5 pt-5 bg-danger text-black"
         style={{ height: 500 }}

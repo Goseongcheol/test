@@ -1,4 +1,5 @@
-const Navi = () => {
+const Navi = (props) => {
+  console.log(props);
   return (
     <ul className="nav justify-content-center">
       <li className="nav-item">
@@ -16,6 +17,13 @@ const Navi = () => {
           logout
         </a>
       </li>
+      <label className="userName ml-5">
+        안녕하세요. {props.userInfo.name} 님
+      </label>
+      <label className="userName ml-5">
+        {" "}
+        권한 - {props.userInfo.accountTypeName}
+      </label>
     </ul>
   );
 };

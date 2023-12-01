@@ -2,11 +2,14 @@ import Navi from "./../../components/navi";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { decreaseAction, increaseAction } from "../../redux/action";
+
 import count from "../../redux/reducers/count";
 
 const Home = () => {
   const dispatch = useDispatch();
   const countInfo = useSelector((state) => state.test.count);
+  const user = useSelector((state) => state.login.userInfo);
+  console.log(user);
 
   const increaseHandler = () => {
     if (countInfo > 5) {
@@ -23,10 +26,11 @@ const Home = () => {
       dispatch(decreaseAction(countInfo - 1));
     }
   };
+  // console.log(user);
 
   return (
     <div className="container" style={{ height: "100vh" }}>
-      <Navi />
+      <Navi userInfo={user} />
       <div className=" border mt-5 pt-5 " style={{ height: 500 }}>
         <div className="row mt-2 h-200px">
           <button
