@@ -3,13 +3,12 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { decreaseAction, increaseAction } from "../../redux/action";
 
-import count from "../../redux/reducers/count";
+// import count from "../../redux/reducers/count";
 
 const Home = () => {
   const dispatch = useDispatch();
   const countInfo = useSelector((state) => state.test.count);
   const user = useSelector((state) => state.login.userInfo);
-  console.log(user);
 
   const increaseHandler = () => {
     if (countInfo > 5) {

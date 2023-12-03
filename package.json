@@ -9,6 +9,7 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
     "env": "^0.0.2",
     "nodemodule": "^0.3.0",
     "prettier": "^3.1.0",

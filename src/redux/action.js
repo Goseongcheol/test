@@ -34,3 +34,8 @@ export const loginSuccessAction = (userInfo) => ({
   type: "LOGIN_SUCCESS",
   payload: userInfo,
 });
+
+export const logoutSuccessAction = () => ({
+  type: "LOGOUT_SUCCESS",
+  payload: null,
+});

@@ -3,7 +3,7 @@ import login from "./../../routes/login";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { loginSuccessAction } from "./../../redux/action";
+import { loginSuccessAction, logoutSuccessAction } from "./../../redux/action";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -16,8 +16,8 @@ const App = () => {
   // const user = useSelector((state) => state.login.userInfo);
 
   // useEffect(() => {
-  //   console.log(user);
-  // }, [user]);
+  //   dispatch(logoutSuccessAction());
+  // }, []);
 
   const goLogin = async (id, password, dispatch) => {
     try {

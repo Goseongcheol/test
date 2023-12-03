@@ -9,7 +9,7 @@ const App = () => {
     <div className="container" style={{ height: "100vh" }}>
       <Navi userInfo={user} />
       <div
-        className=" border mt-5 pt-5 bg-danger text-black"
+        className=" border mt-5 pt-5 bg-Light text-black"
         style={{ height: 500 }}
       >
         <div className="row mt-2  ">
@@ -17,8 +17,11 @@ const App = () => {
             <Kakao />
           </div>
           <div className="col-sm mt-5">
-            <h1>2023-11-28</h1>
-            <h1>고성철</h1>
+            <h1>
+              {user.id}-{user.name}
+            </h1>
+            <h2>{user.email}</h2>
+            <h3>CREATE AT {user.createAt}</h3>
           </div>
         </div>
       </div>

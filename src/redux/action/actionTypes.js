@@ -3,4 +3,5 @@ export const ActionTypes = {
   decreaseNumber: "DECREASE_NUMBER",
   loginSuccess: "LOGIN_SUCCESS",
   loginFail: "LOGIN_FAIL",
+  logoutSuccess: "LOGOUT_SUCCESS",
 };

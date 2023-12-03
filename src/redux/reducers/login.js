@@ -17,6 +17,11 @@ const loginReducer = (state = initialState, action) => {
         ...state,
         userInfo: action.payload,
       };
+    case "LOGOUT_SUCCESS":
+      return {
+        ...state,
+        userInfo: action.payload,
+      };
     default:
       return state;
   }
