@@ -1,0 +1,38 @@
+.sign-in{
+    float: right;
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+.netflix-name{
+    text-align: center;
+    color: crimson;
+    font-size: 80px;
+}
+
+.netflixContainer{
+    background-color: #252525;
+    height: 1290px;
+}
+
+.pay{
+    font-size: xxx-large;
+    height: 110px;
+    width: 900px;
+    color: #fff;
+    background-color: crimson;
+    text-align: center;
+}
+
+span{
+    color:#fff;
+}
+
+.firstCom{
+    text-align: center;
+    height: 1000px;
+}
+
+.empty{
+    height: 200px;
+}

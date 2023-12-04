@@ -28,6 +28,11 @@ const Navi = (props) => {
           logout
         </a>
       </li>
+      <li className="nav-item">
+        <a className="nav-link" href="/netflix">
+          netflix
+        </a>
+      </li>
       <label className="userName ml-5">
         안녕하세요. {props.userInfo?.name} 님
       </label>
