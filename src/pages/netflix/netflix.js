@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/netflix.css";
 import NetflixLogo from "./images/logo.png";
+import tab1Image from "./images/tab-content-1.png";
 
 const Netflix = () => {
   return (
@@ -8,7 +9,7 @@ const Netflix = () => {
       <header className>
         <div className={"row "}>
           <div className={"col"}>
-            <span className={"menu float-left"}> 메뉴</span>
+            <span className={"menu float-left"}> </span>
           </div>
           <div className={"col text-center"}>
             <img
@@ -40,15 +41,82 @@ const Netflix = () => {
           </button>
         </div>
       </div>
-      <div className={"border"}>
-        <button></button>
+
+      <div className={"tabCol"}>
+        <div className={"tabContainer"}>
+          <div className={"menu1"}>
+            <p>Cancel Anytime</p>
+          </div>
+          <div className={"menu2"}>
+            <p>Watch Anywhere</p>
+          </div>
+          <div className={"menu3 "}>
+            <p>Pick your price</p>
+          </div>
+        </div>
+
+        <div className={"liner"}></div>
+        {/* tab1 content*/}
+        <div className={"tab1 text-center"}>
+          <div className={"tab1-1"}>
+            <div className={"pt-5"}>
+              <p className={"mt-5"}>
+                If you decide Netflix ins't for you - no problem.
+              </p>
+              <p>No commitment. Cancel online anytime.</p>
+              <div className={"tab1-2 mt-5"}>
+                <button type="button" className="pay2">
+                  WATCH FREE FOR 30 DAYS >
+                </button>
+              </div>
+            </div>
+          </div>
+          {/*/!* tab2 content*!/*/}
+          {/*<div className={"tab1 text-center"}>*/}
+          {/*  <div className={"tab1-1"}>*/}
+          {/*    <div className={"pt-5"}>*/}
+          {/*      <p className={"mt-5"}>*/}
+          {/*        If you decide Netflix ins't for you - no problem.*/}
+          {/*      </p>*/}
+          {/*      <p>No commitment. Cancel online anytime.</p>*/}
+          {/*      <div className={"tab1-2 mt-5"}>*/}
+          {/*        <button type="button" className="pay2">*/}
+          {/*          WATCH FREE FOR 30 DAYS >*/}
+          {/*        </button>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  </div>*/}
+          {/*  /!* tab3 content*!/*/}
+          {/*  <div className={"tab1 text-center"}>*/}
+          {/*    <div className={"tab1-1"}>*/}
+          {/*      <div className={"pt-5"}>*/}
+          {/*        <p className={"mt-5"}>*/}
+          {/*          If you decide Netflix ins't for you - no problem.*/}
+          {/*        </p>*/}
+          {/*        <p>No commitment. Cancel online anytime.</p>*/}
+          {/*        <div className={"tab1-2 mt-5"}>*/}
+          {/*          <button type="button" className="pay2">*/}
+          {/*            WATCH FREE FOR 30 DAYS >*/}
+          {/*          </button>*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+
+          <div className={""}>
+            <img
+              alt="tab1Image"
+              src={tab1Image}
+              className="netflix-name mt-4"
+              width={"400px"}
+            />
+          </div>
+        </div>
       </div>
-      <div className={"border section-button"}></div>
 
       <div>
-        <footer className={"border footer"}>
+        <footer className={" footer"}>
           <p className={"question"}>Question? Call 010-8945-0781</p>
-          <div className={"border footer-rows"}>
+          <div className={" footer-rows"}>
             <ul>
               <li>
                 <a href={"#"}> FAQ</a>

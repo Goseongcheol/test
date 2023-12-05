@@ -8,9 +8,9 @@ import Netflix from "./pages/netflix/netflix.js";
 
 function App() {
   const userInfo = useSelector((state) => state.login.userInfo);
-  // console.log(userInfo);
+  console.log(userInfo);
   return (
-    <BrowserRouter basename="">
+    <BrowserRouter basename="/">
       <Routes>
         {userInfo ? (
           <>

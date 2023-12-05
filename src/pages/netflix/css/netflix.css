@@ -8,16 +8,47 @@
 
 }
 
+.tabContainer{
+    color: #999;
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 400px;
+    padding-right: 400px;
+    background-color: #252525 ;
+    text-align: center;
+}
+
+.tabContainer p {
+margin-top: 38px;
+}
+
+.lightContainer{
+    height: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 400px;
+    padding-right: 400px;
+}
 
 .netflixContainer{
-    background-color: #252525;
-    height: 2000px;
+    background-color: black;
+    height: 1900px;
 }
 
 .pay{
     font-size: xxx-large;
     height: 110px;
     width: 900px;
+    color: #fff;
+    background-color: crimson;
+    text-align: center;
+}
+
+.pay2{
+    font-size: xx-large;
+    height: 50px;
+    width: 450px;
     color: #fff;
     background-color: crimson;
     text-align: center;
@@ -47,7 +78,7 @@ span{
 .footer{
     color: #999;
     font-size: 20px;
-    max-width: 80%;
+    max-width: 60%;
     margin: 1rem auto;
     overflow: auto;
 }
@@ -68,3 +99,30 @@ span{
     color: inherit;
 }
 
+.tab1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 400px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.liner{
+    height: 2px;
+    background-color: white;
+}
+
+.tab1 p{
+    font-size: 30px;
+    color: #fff;
+}
+
+.tab1-1{
+    display: grid;
+}
+
+.tabCol .tabContainer .menu1:hover,
+.tabCol .tabContainer .menu2:hover,
+.tabCol .tabContainer .menu3:hover {
+    color: white;
+}
