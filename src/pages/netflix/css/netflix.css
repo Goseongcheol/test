@@ -5,14 +5,13 @@
     border-radius: 10px;
 }
 .netflix-name{
-    text-align: center;
-    color: crimson;
-    font-size: 80px;
+
 }
+
 
 .netflixContainer{
     background-color: #252525;
-    height: 1290px;
+    height: 2000px;
 }
 
 .pay{
@@ -36,3 +35,36 @@ span{
 .empty{
     height: 200px;
 }
+
+.message1{
+    font-size: 100px ;
+}
+
+.message2{
+    font-size : 45px;
+}
+
+.footer{
+    color: #999;
+    font-size: 20px;
+    max-width: 80%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer-rows{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.footer ul li{
+    list-style: none;
+    font-size:18px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
