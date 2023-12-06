@@ -4,13 +4,10 @@
     width: 100px;
     border-radius: 10px;
 }
-.netflix-name{
-
-}
 
 .tabContainer{
     color: #999;
-    height: 100px;
+    height: 170px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding-left: 400px;
@@ -20,7 +17,7 @@
 }
 
 .tabContainer p {
-margin-top: 38px;
+    margin-top: 38px;
 }
 
 .lightContainer{
@@ -33,7 +30,7 @@ margin-top: 38px;
 
 .netflixContainer{
     background-color: black;
-    height: 1900px;
+    height: 2050px;
 }
 
 .pay{
@@ -112,7 +109,9 @@ span{
     background-color: white;
 }
 
-.tab1 p{
+.tab1 p,
+.tab2 p,
+.tab3 p{
     font-size: 30px;
     color: #fff;
 }
@@ -125,4 +124,67 @@ span{
 .tabCol .tabContainer .menu2:hover,
 .tabCol .tabContainer .menu3:hover {
     color: white;
+}
+
+.tab2-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 450px;
+    padding-right: 450px;
+}
+
+.tab2-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 400px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.tab2-2-1{
+    height: 400px;
+}
+
+.tab2-2-1 h4{
+    color: #999999;
+}
+
+.tab3-1{
+    display: grid;
+    height: 500px;
+    padding-left: 700px;
+    padding-right: 700px;
+}
+
+.tab3-table{
+    background-color: black ;
+}
+
+.menu1, .menu2, .menu3 {
+    cursor: pointer;
+    padding: 00px;
+    border-bottom: 5px solid transparent;
+}
+
+.menu1.selected, .menu2.selected, .menu3.selected {
+    border-bottom-color: red;
+}
+
+
+.first{
+    color: white;
+    font-size: 20px;
+}
+
+.tab3-table td{
+    color :#999999;
+    font-size: 20px;
+
+}
+
+.line1,
+.line3,
+.line5,
+.line7{
+    background-color: dimgrey;
 }
