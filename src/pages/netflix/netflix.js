@@ -15,6 +15,9 @@ const Netflix = () => {
   const handleTabClick = (tabNumber) => {
     setSelectedTab(tabNumber);
   };
+  const buttonClick = () => {
+    window.location.href = "#";
+  };
 
   return (
     <div className={"netflixContainer"}>
@@ -32,7 +35,11 @@ const Netflix = () => {
             />
           </div>
           <div className={"col"}>
-            <button type="button" className="sign-in  btn-danger mt-4 mr-4 ">
+            <button
+              type="button"
+              className="sign-in  btn-danger mt-4 mr-4"
+              onClick={buttonClick}
+            >
               Sign in
             </button>
           </div>
@@ -48,7 +55,7 @@ const Netflix = () => {
           <span className={"message2"}>WATCH ANYWHERE. CANCEL ANYTIME </span>
         </div>
         <div>
-          <button type="button" className="pay">
+          <button type="button" className="pay" onClick={buttonClick}>
             WATCH FREE FOR 30 DAYS
           </button>
         </div>
@@ -90,7 +97,7 @@ const Netflix = () => {
                 </p>
                 <p>No commitment. Cancel online anytime.</p>
                 <div className={"tab1-2 mt-5"}>
-                  <button type="button" className="pay2">
+                  <button type="button" className="pay2" onClick={buttonClick}>
                     WATCH FREE FOR 30 DAYS
                   </button>
                 </div>
@@ -115,7 +122,11 @@ const Netflix = () => {
                 <p>anywhere - personalized for you.</p>
               </div>
               <div className={"tab2-1-2 "}>
-                <button type="button" className="pay2 mt-5">
+                <button
+                  type="button"
+                  className="pay2 mt-5"
+                  onClick={buttonClick}
+                >
                   WATCH FREE FOR 30 DAYS
                 </button>
               </div>
@@ -178,7 +189,7 @@ const Netflix = () => {
                 <p className={"mt-5"}>
                   Choose one plan and watch everything on Netflix
                 </p>
-                <button type="button" className="pay2 ">
+                <button type="button" className="pay2" onClick={buttonClick}>
                   WATCH FREE FOR 30 DAYS
                 </button>
               </div>
