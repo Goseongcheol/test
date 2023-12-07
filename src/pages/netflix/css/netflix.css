@@ -188,3 +188,8 @@ span{
 .line7{
     background-color: dimgrey;
 }
+
+.count span{
+    color: #252525;
+    font-size: 40px;
+}

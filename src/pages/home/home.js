@@ -2,6 +2,7 @@ import Navi from "./../../components/navi";
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { decreaseAction, increaseAction } from "../../redux/action";
+import "./../netflix/css/netflix.css";
 
 // import count from "../../redux/reducers/count";
 
@@ -31,7 +32,7 @@ const Home = () => {
     <div className="container" style={{ height: "100vh" }}>
       <Navi userInfo={user} />
       <div className=" border mt-5 pt-5 " style={{ height: 500 }}>
-        <div className="row mt-2 h-200px">
+        <div className="border row  mt-2 h-200px">
           <button
             onClick={() => increaseHandler()}
             type="button"
@@ -39,6 +40,9 @@ const Home = () => {
           >
             증가
           </button>
+          <div className={"count"}>
+            <span> {countInfo} </span>
+          </div>
           <div className="2">
             <button
               onClick={() => decreaseHandler()}
@@ -49,7 +53,6 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <span className="count ml-5"> 카운트: {countInfo} </span>
       </div>
     </div>
   );
