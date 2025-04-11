@@ -13,7 +13,7 @@ const Home = () => {
 
   const increaseHandler = () => {
     if (countInfo > 5) {
-      return alert("대물");
+      return alert("최대");
     } else {
       dispatch(increaseAction(countInfo + 1));
     }
@@ -21,7 +21,7 @@ const Home = () => {
 
   const decreaseHandler = () => {
     if (countInfo <= 0) {
-      return alert("소물");
+      return alert("최소");
     } else {
       dispatch(decreaseAction(countInfo - 1));
     }
